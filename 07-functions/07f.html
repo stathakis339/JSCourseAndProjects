@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+     /*function convertTempurature(degrees,units) {
+          if (units === `F`) {
+            function convertToCelsius() {
+              degrees = (degrees - 32) * 5 / 9
+              console.log(`${degrees}C`);  
+            }
+            convertToCelsius();
+
+          } else if (units === `F`) {
+            function convertToFahrenheit() {
+              degrees = (degrees * 9 / 5) + 32
+              console.log(`${degrees}F`);
+            }
+            convertToFahrenheit();
+          }
+      }
+
+      convertTempurature(86,`F`);
+      */
+      
+      
+
+      function convertToFahrenheit(celsius) {
+        return (celsius * 9 / 5) + 32;
+      }
+
+      function convertToCelsius(fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
+      }
+
+      function convertTempurature(degrees, units) {
+        if (units === `C`) {
+          const result = convertToFahrenheit(degrees);
+          return `${result}F`;
+        } else if (unit === `F`) {
+          const result = convertToCelsius(degrees);
+          return `${result}C`;
+        }
+      }
+      console.log(convertTempurature(77, `C`));
+      
+      
+
+      
+  </script>
+</body>
+</html>
