@@ -42,15 +42,15 @@
         if (units === `C`) {
           const result = convertToFahrenheit(degrees);
           return `${result}F`;
-        } else if (unit === `F`) {
+        } else if (units === `F`) {
           const result = convertToCelsius(degrees);
           return `${result}C`;
         }
       }
-      console.log(convertTempurature(77, `C`));
       
+      console.log(convertTempurature(25, `C`));
+      console.log(convertTempurature(86, `F`));
       
-
       
   </script>
 </body>
