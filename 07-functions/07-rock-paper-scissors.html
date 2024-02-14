@@ -21,11 +21,14 @@
     ">Scissors</button>
 
     <script> 
+      // Function to play the rock-paper-scissors game
       function playGame(playerMove) {
+        // Get the computer's move
         const computerMove = pickComputerMove();
-      
+        // Initialize the result variable
         let result = ``;
 
+        // Determine the winner based on player's and computer's moves
         if (playerMove === `Scissors`) {
             if (computerMove === `Rock`) {
             result = `You lose.`;
@@ -54,14 +57,18 @@
           }
         }
         
+        // Display the result in an alert
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
       }
 
+      // Function to randomly pick the computer's move
       function pickComputerMove() {
+        // Generate a random number between 0 and 1
         const randomNumber = Math.random();
-
+        // Initialize the computer's move variable
         let computerMove = ``;
 
+        // Assign a move to the computer based on the random number
         if (randomNumber >= 0 && randomNumber < 1 / 3) {
           computerMove = `Rock`;
         } else if (randomNumber > 1 / 3 && randomNumber < 2 / 3) {
@@ -70,6 +77,7 @@
           computerMove = `Scissors`;
         }
 
+        // Return the computer's move
         return computerMove;                                                                  
       }
     </script>
